@@ -13,6 +13,16 @@
       tailwind.config = {
         theme: {
           extend: {
+            container: {
+              center: true,
+              padding: {
+                DEFAULT: '1rem',
+                sm: '2rem',
+                lg: '4rem',
+                xl: '5rem',
+                '2xl': '6rem',
+              },
+            },
             colors: {
               brand: {
                 navy: '#0A2647',
@@ -47,7 +57,7 @@
         scroll-padding-top: 80px;
       }
       body {
-        background-color: #0A2647;
+        background-color: #051622;
         color: white;
         overflow-x: hidden;
         -webkit-tap-highlight-color: transparent;
@@ -74,16 +84,16 @@
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
       }
       .glass-nav {
-        background: rgba(10, 38, 71, 0.8);
+        background: rgba(5, 22, 34, 0.85);
         backdrop-filter: blur(20px);
         -webkit-backdrop-filter: blur(20px);
         border-bottom: 1px solid rgba(44, 116, 179, 0.2);
       }
       ::-webkit-scrollbar {
-        width: 4px;
+        width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #0A2647; 
+        background: #051622; 
       }
       ::-webkit-scrollbar-thumb {
         background: #2C74B3; 
@@ -96,10 +106,10 @@
         }
       }
 
-      @media (prefers-reduced-motion: reduce) {
-        * {
-          animation-duration: 0.01ms !important;
-          transition-duration: 0.01ms !important;
+      @media (max-width: 768px) {
+        .container {
+          padding-left: 1.5rem;
+          padding-right: 1.5rem;
         }
       }
     </style>
@@ -118,7 +128,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="./assets/index-DEh4cf3N.js"></script>
+  <script type="module" crossorigin src="./assets/index-BJH-FQas.js"></script>
 </head>
   <body>
     <div id="root"></div>
